@@ -1,0 +1,11 @@
+## 属性自动配置
+class : PersionAttribute
+1. - @Value  
+   - @ConfigurationProperties 
+2. 配置导入与配置
+    - @PropertySource 导入属性设置 (applicationxxx.yml 文件)
+   - @ImportResource 导入 spring xml 配置文件
+   - @Bean 注入Bean
+   - @Configration 表明当前类是一个配置类
+3. 其他注解
+      - @AliasFor 注解属性与其他注解属性的关联

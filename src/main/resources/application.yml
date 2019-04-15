@@ -1,0 +1,17 @@
+# '' 不会转义特殊字符  "" 会转移特殊字符
+persion:
+  name: 'xiaoyao'
+  age: 18
+  subPersion: ['xy1','xy2']
+  key: {'xy1':1,"xy2":2}
+other: 'value 注解'
+other2: 'env 获取'
+spring:
+  datasource:
+
+    username: xiaoyao
+    password: 151113
+    url: jdbc:mysql://127.0.0.1:3306/my_temp?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true

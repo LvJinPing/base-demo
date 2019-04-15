@@ -1,0 +1,16 @@
+###JPA 使用
+1. 原理:
+    - 底层以 hibernate 为基础
+    - hibernate 实现的是 java 规范。所有的entity 注解采用的 java 规范
+    - 参见 CpUser 类
+2.  hibernate 运行流程 /原理  主要是懒加载理解  后期
+3.  数据库操作通过实现 JpaRepository 及其父接口实现 
+    - ###### 下列事项待完成
+    - 自定义查询
+    - 分页
+    - 自定义排序
+    - 数据库事务
+4. 预留事项
+- 解决org.hibernate.lazyinitializationexception could not initialize proxy - no session
+    - 在出问题的实体类上加@Proxy(lazy = false)
+    - findOne方法等写成了getOne等
