@@ -17,7 +17,8 @@ import org.springframework.transaction.annotation.Transactional;
 // import 可以将 A 及 selector 合 registara 获取的类注入到容器中。动态的注入，并非容器启动就注入相关的类
 // 不能单独使用。需要与其他能将bean 加入容器的注解一起使用。  (能把 bean 加入容器的接口呢?)
 // import 带有@Configration 的类又是什么意思?
-@Import({CImportSelector.class,ImportCRegistrar.class, AConfigration.class})
+//@Import({CImportSelector.class,ImportCRegistrar.class, AConfigration.class})
+@Import({CImportSelector.class,ImportCRegistrar.class})
 @Configuration
 public class BeanConfigration {
 

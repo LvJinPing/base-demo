@@ -15,3 +15,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
+myautoconfig:
+  xy:
+    name: xiaoyao
+    age: 18
+    version: 100

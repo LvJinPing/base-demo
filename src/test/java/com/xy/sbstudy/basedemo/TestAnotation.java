@@ -18,16 +18,19 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class TestAnotation {
     @Autowired
-    private A a;
+    private A a1;
     @Autowired
     private B b;
     @Autowired
     private C c;
     @Test
     public void test_import(){
-        a.a();
         b.a();
         c.a();
+    }
+    @Test
+    public void test_autoConfig(){
+        System.out.println(a1);
     }
 
 }
